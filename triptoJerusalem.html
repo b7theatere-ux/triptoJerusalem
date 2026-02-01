@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>טיול גיבוש - תיאטרון</title>
+    <style>
+        :root {
+            --bg-color: #fdfbf7; /* גוון אבן בהיר */
+            --card-bg: #ffffff;
+            --primary-green: #4a7c59; /* ירוק יער */
+            --accent-blue: #87ceeb; /* תכלת שמיים */
+            --text-color: #333333;
+            --stone-gold: #d4c598;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--primary-green);
+            color: white;
+            text-align: center;
+            padding: 2.5rem 1rem;
+            border-bottom: 5px solid var(--stone-gold);
+        }
+
+        h1 { margin: 0; font-size: 2.2rem; }
+        p.subtitle { margin-top: 5px; font-size: 1.2rem; opacity: 0.9; }
+
+        .container {
+            max-width: 700px;
+            margin: 20px auto;
+            padding: 0 15px;
+        }
+
+        .day-title {
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--accent-blue);
+            padding-bottom: 5px;
+            margin-top: 40px;
+            font-size: 1.6rem;
+        }
+
+        .event-card {
+            background: var(--card-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            margin-bottom: 15px;
+            padding: 15px;
+            border-right: 4px solid var(--accent-blue);
+            transition: transform 0.2s;
+        }
+
+        .time {
+            font-weight: bold;
+            color: var(--primary-green);
+            font-size: 0.95rem;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .location {
+            font-size: 1.15rem;
+            font-weight: bold;
+        }
+
+        .details {
+            font-size: 1rem;
+            color: #666;
+        }
+
+        /* עיצוב אזור הטופס */
+        .registration-section {
+            background-color: #f0f4f1;
+            padding: 30px 15px;
+            margin-top: 50px;
+            border-radius: 15px;
+            border: 1px solid var(--stone-gold);
+            text-align: center;
+        }
+
+        .form-container {
+            position: relative;
+            overflow: hidden;
+            width: 100%;
+            padding-top: 140%; /* יחס גובה לרוחב לטופס */
+        }
+
+        .form-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 1rem;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>טיול גיבוש לצוות התיאטרון 🎭</h1>
+        <p class="subtitle">יומיים של השראה ירושלמית | 12-13 באפריל</p>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="day-title">יום ראשון - 12/04 ☀️</h2>
+        
+        <div class="event-card">
+            <span class="time">בוקר</span>
+            <div class="location">עצירת בוקר ביער שחריה (מלאכים) 🌲</div>
+            <div class="details">מתחילים את היום בטבע עם אוויר נקי וכיבוד קל.</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">צהריים</span>
+            <div class="location">שוק מחנה יהודה ונחלאות 🍎</div>
+            <div class="details">סיור טעימות קולינרי בשוק הכי תוסס בארץ ושיטוט בסמטאות הציוריות.</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">אחר הצהריים</span>
+            <div class="location">מלון רמת רחל 🏨</div>
+            <div class="details">הגעה למלון, קבלת חדרים, מנוחה והתארגנות.</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">ערב</span>
+            <div class="location">מסעדת סלון יווני 🍽️</div>
+            <div class="details">ארוחת ערב חגיגית באווירה מיוחדת.</div>
+        </div>
+
+        <h2 class="day-title">יום שני - 13/04 🕍</h2>
+
+        <div class="event-card">
+            <span class="time">בוקר</span>
+            <div class="location">ארוחת בוקר במלון ☕</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">לפני הצהריים</span>
+            <div class="location">מנהרות הכותל - הגשר הגדול 🏛️</div>
+            <div class="details">סיור היסטורי מרתק מתחת לפני האדמה.</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">המשך היום</span>
+            <div class="location">זמן חופשי בכותל ✨</div>
+            <div class="details">רגעים של שקט ותפילה אישית.</div>
+        </div>
+
+        <div class="event-card">
+            <span class="time">צהריים</span>
+            <div class="location">מסעדת צידקיהו 🥩</div>
+            <div class="details">ארוחת צהריים בשרית עשירה לסיכום הטיול.</div>
+        </div>
+
+        <div class="registration-section">
+            <h2 style="color: var(--primary-green);">אישור הגעה ורישום 📝</h2>
+            <p>אנא מלאו את הפרטים כדי שנוכל להיערך בהתאם:</p>
+            <div class="form-container">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScf-U4Ap2d7tR-8wVzdf8pfBua3nA-Vz4z2rA0nTTVJOqqXaw/viewform?embedded=true">בטעינה…</iframe>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        מחכים לראות את כולם! ❤️
+    </footer>
+
+</body>
+</html>
